@@ -44,6 +44,7 @@ module.exports = {
         throw new UserInputError('Wrong crendetials', { errors });
       }
 
+
       const token = generateToken(user);
 
       return {
