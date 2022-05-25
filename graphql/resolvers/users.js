@@ -2,10 +2,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { UserInputError } = require('apollo-server');
 
-const {
-  validateRegisterInput,
-  validateLoginInput,
-} = require('../../utils/validators');
+const { validateLoginInput, validateRegisterInput } = require('../../utils/validators.js')
 const { KEY_SECRET } = require('../../config');
 const User = require('../../models/User');
 
@@ -24,7 +21,7 @@ function generateToken(user) {
 module.exports = {
   Mutation: {
     async login(_, { userName, password }) {
-      const { errors, valid } = validateLoginInput(userName, password);
+     const { errors, valid } = validateLoginInput(userName, password);
 
       if (!valid) {
         throw new UserInputError('Errors', { errors });
@@ -51,7 +48,7 @@ module.exports = {
         token,
       };
     },
-    
+
     async register(
       _,
       { registerInput: { userName, email, password, confirmPassword } },
