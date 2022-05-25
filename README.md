@@ -13,7 +13,7 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [ ] criar client
-- [ ] Arrumar login
+- [x] Arrumar login
 
 
 ## 💻 Pré-requisitos
@@ -62,7 +62,7 @@ Para usar o Social-media, siga estas etapas:
   </tr>
 </table>
 
-  <a href="https://www.linkedin.com/in/rafaeltomass/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+  <a href="https://www.linkedin.com/in/rafaeltomass/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
 
 ## 📝 Licença
