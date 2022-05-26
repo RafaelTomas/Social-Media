@@ -14,6 +14,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [ ] criar client
 - [x] Arrumar login
+- [ ] Arrumar LikePost
 
 
 ## 💻 Pré-requisitos

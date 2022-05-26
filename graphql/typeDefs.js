@@ -7,7 +7,9 @@ type Post{
   createdAt: String!
   userName: String!
   comments: [Comment]!
+  commentCount: Int!
   likes: [Like]!
+  likeCount: Int!
 }
 
 type Comment{
