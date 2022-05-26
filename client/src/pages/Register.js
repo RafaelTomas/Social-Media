@@ -2,7 +2,7 @@ import React from 'react'
 
 function Register() {
   return (
-    <div></div>
+    <div><h1>Oi</h1></div>
   )
 }
 
