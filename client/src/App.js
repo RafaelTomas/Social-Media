@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <Container>
-        <Nav>
+        <Nav >
           <Route path="/" component={Home} />
           <Route path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
