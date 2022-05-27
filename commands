@@ -1,0 +1,85 @@
+//registrar usuario
+mutation  {
+  register(registerInput:{
+    userName:"user1"
+    password:"123456"
+    confirmPassword:"123456"
+    email:"user@email.com"
+  }) {
+    id
+    email
+    token
+    userName
+    createdAt
+  }
+}
+//ver usuario-pegar o token
+mutation Login($userName: String!, $password: String!) {
+  login(userName: $userName, password: $password) {
+    id
+    email
+    token
+    userName
+    createdAt
+  }
+}
+//criar posts
+mutation createdPost {
+createPost(body: "Back-end Post") {
+id
+body
+createdAt
+userName
+}
+}
+
+query posts {
+  getPosts {
+    id
+    body
+    createdAt
+    userName
+    likes {
+      id
+      userName
+
+    }
+  }
+}
+//criar comentario
+mutation comment{
+  createComment(postId: "628e8b55bd81aa0d64db7169", body: "cool") {
+    id
+    body
+    comments {
+      id
+      createdAt
+      userName
+      body
+    }
+    userName
+  }
+}
+//deletar comentario
+mutation deletecomments{
+  deleteComment(postId: "628e8b55bd81aa0d64db7169", commentId: "628e8ed4d8bdac56528d4641"){
+    id
+    comments {
+      id
+      body
+    }
+  }
+  }
+
+//curtir post, não ta funcionando
+  mutation{
+    likePost(postId: "628e8b55bd81aa0d64db7169") {
+      id
+      body
+      userName
+      likes{
+        id
+        userName
+      }
+    }
+  }
