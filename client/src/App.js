@@ -8,7 +8,7 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Nav from './components/nav/index.js';
+import Nav from './components/Nav';
 
 function App() {
   return (

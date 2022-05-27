@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { Menu } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
+
 function Nav() {
   const pathname = window.location.pathname;
 
-  const path = pathname === '/' ? 'home': pathname.substring(1)
+  const path = pathname === '/' ? 'home' : pathname.substring(1);
   const [activeItem, setActiveItem] = useState(path);
 
-  const handleItemClick = (e, { name }) => setActiveItem({ name });
-
-  return (
-    <Menu pointing secondary size='massive' color='green'>
+  const handleItemClick = (e, { name }) => setActiveItem(name);
+ return (
+    <Menu pointing secondary size="massive" color="green">
       <Menu.Item
         name="home"
         active={activeItem === 'home'}
@@ -35,8 +35,8 @@ function Nav() {
           to="/register"
         />
       </Menu.Menu>
-    </Menu>
-  );
+     </Menu>
+ )
 }
 
 export default Nav;
