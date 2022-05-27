@@ -1,73 +1,128 @@
-# Social Media
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/RafaelTomas/Social-Media?color=%2304D361">
 
-![GitHub repo size](https://img.shields.io/github/repo-size/RafaelTomas/Social-Media?style=flat&logo=appveyor)
-![GitHub language count](https://img.shields.io/github/languages/count/RafaelTomas/Social-Media?style=flat&logo=appveyor)
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/RafaelTomas/Social-Media">
 
-<!--
-<img src="exemplo-image.png" alt="exemplo imagem">
+  <a href="https://github.com/RafaelTomas/Social-Media/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/RafaelTomas/Social-Media">
+  </a>
+   <a href="https://github.com/RafaelTomas/Social-Media">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/RafaelTomas/Social-Media?style=social">
+  </a>
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler. -->
+  <a href="https://rafaeltomas.com">
+    <img alt="Feito por Rafael Tomas" src="https://img.shields.io/badge/feito%20por-Rafael Tomás-%237519C1">
+  </a>
 
-### Ajustes e melhorias
+  <a href="linkedin/in/rafaeltomass">
+    <img alt="Stargazers" src="https://img.shields.io/badge/Linkedin-rafaeltomass-%237159c1?style=flat&logo=ghost">
+    </a>
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+</p>
 
-- [ ] criar Front-end
-- [x] Arrumar login
-- [ ] Arrumar LikePost
+<h4 align="center">
+	🚧  Social media ♻️ Construção 🚀 🚧
+</h4>
 
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-como-executar-o-projeto">Como executar</a> •
+ <a href="#-tecnologias">Tecnologias</a> •
+ <a href="#-autor">Autor</a> •
+</p>
 
-## 💻 Pré-requisitos
+## 💻 Sobre o projeto
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente de `< Nodejs >`
-* Você ter uma máquina `<Windows / Linux / Mac>`.
+♻️ Social Media - é um projetinho feito para colocar em pratica meus conhecimento de graphql e React, funciona como uma rede social em que se pode criar um usuario e posts.
 
+## 🚀 Como executar o projeto
 
-## 🚀 Instalando Social-Media
+Este projeto é divido em duas partes:
+1. Backend
+2. Frontend (pasta client)
 
-Para instalar o SocialMedia, siga estas etapas:
+💡O Frontend precisa que o Backend esteja sendo executado para funcionar.
+### Pré-requisitos
 
-Linux e macOS:
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+#### 🎲 Rodando o Backend (servidor)
+
+```bash
+
+# Clone este repositório
+$ git clone git@github.com:RafaelTomas/Social-Media.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd Social-media
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
+
+# O servidor inciará na porta:5000 - acesse http://localhost:5000
+
 ```
-<comando_de_instalação>
+#### 🧭 Rodando a aplicação web (Frontend)
+
+```bash
+
+# Clone este repositório
+$ git clone git@github.com:RafaelTomas/Social-Media.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd Social-media
+
+# Vá para a pasta da aplicação Front End
+$ cd client
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 ```
+---
+## 🛠 Tecnologias
 
-Windows:
-```
-<comando_de_instalação>
-```
+As seguintes ferramentas foram usadas na construção do projeto:
 
-## ☕ Usando
+#### **Website**  ([React](https://reactjs.org/))
 
-Para usar o Social-media, siga estas etapas:
+> Veja o arquivo  [package.json](https://github.com/RafaelTomas/Social-Media/blob/front/client/package.json)
+#
+#### **Server**  ([NodeJS](https://nodejs.org/en/) )
 
-```
-<exemplo_de_uso>
-```
+-   **[ApolloServer](https://www.apollographql.com)**
+-   **[GraphQL](https://graphql.org)**
+-   **[MongoDB](www.mongodb.com)**
 
-# 🤝 Autor
+> Veja o arquivo  [package.json](https://github.com/RafaelTomas/Social-Media/blob/main/package.json)
+#### **Utilitários**
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/73807228?v=4" width="100px;" alt="Foto de Rafael no GitHub"/><br>
-        <sub>
-          <b>Rafael Tomás</b>
-        </sub>
-      </a>
-    </td>
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+-   Commit Conventional:  **[convetionalCommits](https://www.conventionalcommits.org/en/v1.0.0/)**
+-   Teste de API:  **[AppoloServer]()**
 
-  </tr>
-</table>
+---
+## 🦸 Autor
 
-  <a href="https://www.linkedin.com/in/rafaeltomass/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+<a href="https://rafaeltomas.com">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/73807228?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Rafael Tomás</b></sub></a> <a href="https://linkedin/in/rafaeltomass/" title="linkedin"></a>
+ <br />
 
+[![Linkedin Badge](https://img.shields.io/badge/-Rafael-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafaeltomass/)](https://www.linkedin.com/in/rafaeltomass/)
+[![Gmail Badge](https://img.shields.io/badge/-rafaeltomassouza@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rafaeltomassouza@gmail.com)](mailto:rafaeltomassouza@gmail.com)
 
-## 📝 Licença
+---
+##  Versões do README
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
-
-[⬆ Voltar ao topo](#SocialMedia)<br>
+[Português 🇧🇷](./README.md)
