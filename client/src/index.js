@@ -6,9 +6,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css'
 import "./index.css";
 
-import { App } from "./templates/App";
-import { Register } from "./templates/Register";
-import { Login } from "./templates/Login";
+import  Home  from "./templates/Home";
+import  Register  from "./templates/Register";
+import  Login  from "./templates/Login";
 import Nav from './components/Nav';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,9 +18,9 @@ root.render(
     <Container>
         <Nav/>
       <Routes>
-        <Route exact path='/' component={<App/>} />
-        <Route exact path='/login' component={<Login/>} />
-        <Route exact path='/register' component={<Register/>} />
+        <Route exact  path='/' element={<Home/>} />
+        <Route exact path='/login' element={<Login/>} />
+        <Route exact path='/register' element={<Register/>} />
       </Routes>
     </Container>
     </BrowserRouter>
